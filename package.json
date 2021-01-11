@@ -1,15 +1,15 @@
 {
-    "name": "dawn",
-    "description": "A Ghost theme",
-    "version": "1.0.0",
+    "name": "capichefm",
+    "description": "A theme for the Capiche FM blog based on Ghost Dawn",
+    "version": "1.0.1",
     "engines": {
         "ghost": ">=3.0.0",
         "ghost-api": "v3"
     },
     "license": "MIT",
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
+        "name": "matthewguay",
+        "email": "matthew@capiche.com",
         "url": "https://ghost.org"
     },
     "keywords": [

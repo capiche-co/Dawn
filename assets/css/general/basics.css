@@ -1,22 +1,23 @@
 :root {
-    --brand-color: #ff572f;
-    --primary-text-color: #333;
-    --secondary-text-color: #999;
-    --white-color: #fff;
-    --lighter-gray-color: #f6f6f6;
-    --light-gray-color: #e6e6e6;
-    --mid-gray-color: #ccc;
-    --dark-gray-color: #444;
-    --darker-gray-color: #1a1a1a;
-    --black-color: #000;
-    --green-color: #28a745;
-    --orange-color: #ffc107;
-    --red-color: #dc3545;
+    --brand-color: #7A8FCD;
+    --primary-text-color: #4f4b48;
+    --secondary-text-color: #ada49e;
+    --white-color: #FFF9F5;
+    --lighter-gray-color: #EBE5E0;
+    --light-gray-color: #CDC7C1;
+    --mid-gray-color: #ADA69F;
+    --dark-gray-color: #7C736D;
+    --darker-gray-color: #534B46;
+    --black-color: #221E1B;
+    --green-color: #24BCB2;
+    --orange-color: #FA8A71;
+    --red-color: #EA765D;
     --facebook-color: #3b5998;
     --twitter-color: #1da1f2;
     --rss-color: #f26522;
     --animation-base: ease-in-out;
-    --font-base: Mulish, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif; /* stylelint-disable-line value-keyword-case */
+    --font-base: 'NeuePlak-Regular', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif; /* stylelint-disable-line value-keyword-case */
+    --font-second: 'ExchangeMP', Georgia, Times, Times New Roman, serif; /* stylelint-disable-line value-keyword-case */
     --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; /* stylelint-disable-line value-keyword-case */
     --navbar-height: 80px;
 }
@@ -40,7 +41,7 @@ html {
 
 body {
     color: var(--primary-text-color);
-    font-family: var(--font-base);
+    font-family: var(--font-second);
     font-size: 1.5rem;
     line-height: 1.6;
     text-rendering: optimizeLegibility;
@@ -73,6 +74,34 @@ h6 {
     font-weight: 800;
 }
 
+h1 {
+    font-family: 'NeuePlak-Black';
+    test-align: revert;
+    font-size: 4em;
+}
+
+h2 {
+    font-family: 'NeuePlak-Black';
+    font-size: 3em;
+}
+
+h2::before {
+    content: "## ";
+    margin-left: -1em;
+    color: #CDC7C1;
+}
+
+h3 {
+    font-family: 'NeuePlak-Black';
+    font-size: 2.5em;
+}
+
+h3::before {
+    content: "### ";
+    margin-left: -1em;
+    color: #CDC7C1;
+}
+
 p {
     margin: 0 0 2rem;
 }
@@ -85,17 +114,30 @@ img {
 
 blockquote {
     margin-right: 0;
-    margin-left: 0;
+    margin-left: -10%;
     padding: 2rem 3rem;
-    border-left: 5px solid var(--brand-color);
-    color: var(--secondary-text-color);
-    font-size: 2.1rem;
+    color: var(--green-color);
+    font-size: 3.5rem;
     line-height: 1.4;
-    font-weight: 700;
-    font-style: italic;
+    font-family: 'NeuePlak-Black';
     letter-spacing: -0.03rem;
-    text-align: center;
-    background-color: var(--lighter-gray-color);
+}
+
+blockquote::before {
+    font-size: 120px;
+    position: absolute;
+    content: '>';
+    color: #40a8b7;
+    background-color: #ccf3f7;
+    opacity: 0.4;
+    border-radius: 110% 80% 107% 65%;
+    width: 500px;
+    height: 300px;
+    z-index: -10;
+    padding-left: 210px;
+    padding-bottom: 100px;
+    margin-top:-60px;
+    margin-left: -300px;
 }
 
 blockquote strong {
