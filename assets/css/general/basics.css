@@ -76,8 +76,8 @@ h6 {
 
 h1 {
     font-family: 'NeuePlak-Black';
-    test-align: revert;
-    font-size: 4em;
+    text-align: revert;
+    font-size: 4em !important;
 }
 
 h2 {
@@ -87,7 +87,7 @@ h2 {
 
 h2::before {
     content: "## ";
-    margin-left: -1em;
+    margin-left: -1.8em;
     color: #CDC7C1;
 }
 
