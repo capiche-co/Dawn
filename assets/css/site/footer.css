@@ -12,8 +12,9 @@
 
 .social-item {
     margin: 0 4px;
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     line-height: 0;
+    font-size: 1.2rem;
 }
 
 .social-item .icon {
@@ -22,13 +23,13 @@
 }
 
 .copyright {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     font-size: 1.2rem;
     letter-spacing: -0.02rem;
 }
 
 .copyright a {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
 }
 
 .copyright a:hover {
@@ -41,7 +42,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 0.5rem;
+    margin-top: -3rem;
 }
 
 .footer-nav .menu-item {

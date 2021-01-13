@@ -1,10 +1,11 @@
 <header class="site-header container">
     <div class="header-left">
-        <a class="logo" href="{{@site.url}}">
+        <a class="logo" href="https://capiche.fm/">
             {{#if @site.logo}}
                 <img class="logo-image" src="{{@site.logo}}" alt="{{@site.title}}">
             {{else}}
-                <span class="logo-text">{{@site.title}}</span>
+                <span class="logo-text">capiche.fm</span>
+                <span class="logo-beta">BETA</span>
             {{/if}}
         </a>
     </div>
@@ -20,6 +21,9 @@
             {{/if}}
         </nav>
 
+        <div aria-label="Capiche FM" class="button-capiche hidden-lg hidden-xl">
+            <a class="" href="https://capiche.fm/discover">📻&nbsp;&nbsp;Discover shows</a>
+        </div>
         <button class="button-icon hidden-lg hidden-xl js-modal" data-modal="search" aria-label="Search">
             <svg class="icon">
                 <use xlink:href="#magnify"></use>
@@ -34,6 +38,7 @@
             <div class="container">
                 <nav class="mobile-nav">
                     {{navigation}}
+                    <a class="menu-item" aria-label="Sign into Capiche FM" href="https://capiche.fm/signin">Sign in</a>
                     {{#if @labs.members}}
                         {{#if @member}}
                             <button class="button-text menu-item members-account" data-portal="account">Account</button>
@@ -61,6 +66,12 @@
                 <button class="button-text menu-item menu-item-cta members-subscribe" data-portal="signup">Subscribe</button>
             {{/if}}
         {{else}}
+            <div aria-label="Capiche FM" class="button-capiche">
+                <a class="" href="https://capiche.fm/discover">📻&nbsp;&nbsp;Discover shows</a>
+            </div>
+            <div class="content" aria-label="Sign into Capiche FM" style="padding-left: 1em;padding-right: 1em;">
+                <a class="" href="https://capiche.fm/signin">Sign in</a>
+            </div>
             <button class="button-icon js-modal" data-modal="search" aria-label="Search">
                 <svg class="icon">
                     <use xlink:href="#magnify"></use>

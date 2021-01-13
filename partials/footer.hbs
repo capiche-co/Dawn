@@ -1,44 +1,32 @@
-<footer class="site-footer container">
-    <div class="social">
-        {{#if @site.facebook}}
-            <a class="social-item social-item-facebook"
-                href="{{facebook_url @site.facebook}}" target="_blank"
-                rel="noopener noreferrer" aria-label="Facebook">
-                <svg class="icon">
-                    <use xlink:href="#facebook-box"></use>
-                </svg>
-            </a>
-        {{/if}}
-        {{#if @site.twitter}}
-            <a class="social-item social-item-twitter"
-                href="{{twitter_url @site.twitter}}" target="_blank"
-                rel="noopener noreferrer" aria-label="Twitter">
-                <svg class="icon">
-                    <use xlink:href="#twitter-box"></use>
-                </svg>
-            </a>
-        {{/if}}
-        <a class="social-item" href="https://capiche.com/">Help</a> |
-        <a class="social-item" href="https://capiche.com/">About</a> |
+<nav class="footer-nav">
+    {{navigation type="secondary"}}
+    <a class="menu-item js-theme" href="#" data-system="System theme" data-dark="Dark theme" data-light="Light theme">
+        <svg class="icon theme-icon theme-icon-system">
+            <use xlink:href="#circle-half-full"></use>
+        </svg>
+        <svg class="icon theme-icon theme-icon-dark">
+            <use xlink:href="#brightness-2"></use>
+        </svg>
+        <svg class="icon theme-icon theme-icon-light">
+            <use xlink:href="#white-balance-sunny"></use>
+        </svg>
+        <span class="theme-text">System theme</span>
+    </a>
+</nav>
+<footer class="site-header container">
+    <div class="header-left copyright">
+        <div>© {{date format="YYYY"}} <a href="https://capiche.fm/">CAPICHE RESEARCH CORPORATION</a>.</div>
     </div>
-
-    <div class="copyright">
-        © {{date format="YYYY"}} CAPICHE RESEARCH CORPORATION
+    <div class="header-nav">
+        <a class="social-item" href="mailto:team@capiche.com">team@capiche.com</a> |
+        <a class="social-item" href="sms://+18473839070">+1.847.383.9070</a>
     </div>
-
-    <nav class="footer-nav">
-        {{navigation type="secondary"}}
-        <a class="menu-item js-theme" href="#" data-system="System theme" data-dark="Dark theme" data-light="Light theme">
-            <svg class="icon theme-icon theme-icon-system">
-                <use xlink:href="#circle-half-full"></use>
-            </svg>
-            <svg class="icon theme-icon theme-icon-dark">
-                <use xlink:href="#brightness-2"></use>
-            </svg>
-            <svg class="icon theme-icon theme-icon-light">
-                <use xlink:href="#white-balance-sunny"></use>
-            </svg>
-            <span class="theme-text">System theme</span>
-        </a>
-    </nav>
+    <div class="header-right social-item">
+        <a class="social-item" href="https://capiche.fm/about">About</a> |
+        <a class="social-item" href="https://blog.capiche.fm/">Blog</a> |
+        <a class="social-item" href="https://www.notion.so/capiche/What-s-new-in-Capiche-FM-e56f62fe9d2042868cc6e0a389fdcaf5">What's new</a> |
+        <a class="social-item" href="https://capiche.fm/help">Help</a> |
+        <a class="social-item" href="https://capiche.fm/terms">Terms</a> |
+        <a class="social-item" href="https://www.notion.so/capiche/Jobs-Capiche-5db52b1ee93048b98618b1004dbec436">Join our team</a>
+    </div>
 </footer>

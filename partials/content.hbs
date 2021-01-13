@@ -78,6 +78,35 @@
     {{#is "post"}}
         <footer class="single-footer container medium">
             <div class="single-footer-left">
+            </div>
+            <div class="single-footer-middle">
+                <div class="single-footer-top">
+                </div>
+                <div class="single-footer-bottom">
+                    <div class="share">
+                        <div style="font-family: 'NeuePlak-Black';font-size: 1.2em;" class="">Share your thoughts:</div>
+                        <a class="share-link share-link-facebook"
+                            href="https://www.facebook.com/sharer.php?u={{url absolute="true"}}"
+                            target="_blank" rel="noopener noreferrer">
+                            <svg class="icon icon-facebook">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="share-link share-link-twitter"
+                            href="https://twitter.com/intent/tweet?url={{url absolute="true"}}&text={{encode title}}"
+                            target="_blank" rel="noopener noreferrer">
+                            <svg class="icon icon-twitter">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="single-footer-right">
+            </div>
+        </footer>
+        <footer class="single-footer container medium">
+            <div class="single-footer-left">
                 {{#prev_post}}
                     <div class="navigation navigation-previous">
                         <a class="navigation-link" href="{{url}}"
@@ -90,28 +119,6 @@
                 {{/prev_post}}
             </div>
             <div class="single-footer-middle">
-                <div class="single-footer-top">
-                </div>
-                <div class="single-footer-bottom">
-                    <div class="share">
-                        <a class="share-link share-link-facebook"
-                            href="https://www.facebook.com/sharer.php?u={{url absolute="true"}}"
-                            target="_blank" rel="noopener noreferrer">
-                            <svg class="icon icon-facebook">
-                                <use xlink:href="#facebook"></use>
-                            </svg>
-                            Share
-                        </a>
-                        <a class="share-link share-link-twitter"
-                            href="https://twitter.com/intent/tweet?url={{url absolute="true"}}&text={{encode title}}"
-                            target="_blank" rel="noopener noreferrer">
-                            <svg class="icon icon-twitter">
-                                <use xlink:href="#twitter"></use>
-                            </svg>
-                            Tweet
-                        </a>
-                    </div>
-                </div>
             </div>
             <div class="single-footer-right">
                 {{#next_post}}
