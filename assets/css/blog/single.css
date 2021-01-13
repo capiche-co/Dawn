@@ -1,37 +1,73 @@
+.title-image img {
+    position: absolute;
+    top: 1em;
+    border-radius: 80% 100% 70% 90%;
+    max-width: 30%;
+    max-height: 30%;
+    font-size: 90px;
+    margin-left: 70%;
+}
+
+.single-content {
+    font-family: var(--font-second);
+}
+
+.single-content h2::before {
+    content: "## ";
+    margin-left: -1.8em;
+    color: #CDC7C1;
+}
+
+.single-content h3::before {
+    content: "### ";
+    margin-left: -1em;
+    color: #CDC7C1;
+}
+
 .single-header {
-    margin-bottom: 4.5rem;
+    margin-bottom: 2em;
     text-align: center;
 }
 
 .single-meta {
-    margin-bottom: 1rem;
+    margin-top: -1em;
     color: var(--secondary-text-color);
     font-size: 1.2rem;
     font-weight: 800;
-    text-transform: uppercase;
+    font-style: italic;
+    text-align: left;
 }
 
 .single-meta-item + .single-meta-item::before {
-    content: "\02022";
+    content: " ";
     padding: 0 0.3rem;
     font-family: serif;
 }
 
 .single-meta-tag .post-tag {
     color: var(--brand-color);
+    background-color: var(--lighter-gray-color);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-family: var(--font-mono);
 }
 
 .single-title {
     margin-bottom: 0;
-    font-size: 4rem;
-    line-height: 1.2;
+    font-size: 4em;
+    line-height: 1;
     letter-spacing: -0.1rem;
+    max-width: 80%;
 }
 
 .single-excerpt {
     margin-top: 2rem;
-    font-size: 1.8rem;
-    font-style: italic;
+    font-size: 2em;
+    text-align: left;
+    font-family: 'NeuePlak-Black';
+    line-height: 1;
+    color: var(--mid-gray-color);
+    max-width: 85%;
 }
 
 .single-media {
@@ -97,6 +133,12 @@
     margin-top: 2rem;
 }
 
+@media (max-width: 991px) {
+    .single-title {
+        max-width: 75%;
+    }
+}
+
 @media (max-width: 767px) {
     .single-header {
         margin-bottom: 3rem;
@@ -112,5 +154,15 @@
 
     .single-media {
         margin-top: 3rem;
+    }
+
+    .title-image img {
+        position: initial;
+        top: 0;
+        border-radius: 80% 100% 70% 90%;
+        max-width: 80%;
+        max-height: 80%;
+        font-size: 90px;
+        margin-left: 10%;
     }
 }

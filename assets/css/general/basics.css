@@ -15,6 +15,9 @@
     --facebook-color: #3b5998;
     --twitter-color: #1da1f2;
     --rss-color: #f26522;
+    --quotebg-color: #ebf6f7;
+    --quotetxt-color: #26bea7;
+    --quoteaccent-color: #40a8b7;
     --animation-base: ease-in-out;
     --font-base: 'NeuePlak-Regular', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif; /* stylelint-disable-line value-keyword-case */
     --font-second: 'ExchangeMP', Georgia, Times, Times New Roman, serif; /* stylelint-disable-line value-keyword-case */
@@ -41,7 +44,7 @@ html {
 
 body {
     color: var(--primary-text-color);
-    font-family: var(--font-second);
+    font-family: var(--font-base);
     font-size: 1.5rem;
     line-height: 1.6;
     text-rendering: optimizeLegibility;
@@ -85,21 +88,9 @@ h2 {
     font-size: 3em;
 }
 
-h2::before {
-    content: "## ";
-    margin-left: -1.8em;
-    color: #CDC7C1;
-}
-
 h3 {
     font-family: 'NeuePlak-Black';
     font-size: 2.5em;
-}
-
-h3::before {
-    content: "### ";
-    margin-left: -1em;
-    color: #CDC7C1;
 }
 
 p {
@@ -116,7 +107,7 @@ blockquote {
     margin-right: 0;
     margin-left: -10%;
     padding: 2rem 3rem;
-    color: var(--green-color);
+    color: var(--quotetxt-color);
     font-size: 3.5rem;
     line-height: 1.4;
     font-family: 'NeuePlak-Black';
@@ -127,9 +118,9 @@ blockquote::before {
     font-size: 120px;
     position: absolute;
     content: '>';
-    color: #40a8b7;
-    background-color: #ccf3f7;
-    opacity: 0.4;
+    color: var(--quoteaccent-color);
+    background-color: var(--quotebg-color);
+    opacity: 0.8;
     border-radius: 110% 80% 107% 65%;
     width: 500px;
     height: 300px;

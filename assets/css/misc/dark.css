@@ -7,6 +7,9 @@
     --mid-gray-color: #ADA69F;
     --dark-gray-color: #EBE5E0;
     --darker-gray-color: #FFF9F5;
+    --quotebg-color: #433924;
+    --quotetxt-color: #EFD56C;
+    --quoteaccent-color: #221E1B;
 }
 
 .theme-dark .logo-image.white + .logo-image,
@@ -49,7 +52,10 @@
         --light-gray-color: #534B46;
         --mid-gray-color: #ADA69F;
         --dark-gray-color: #EBE5E0;
-        --darker-gray-color: #FFF9F5
+        --darker-gray-color: #FFF9F5;
+        --quotebg-color: #433924;
+        --quotetxt-color: #EFD56C;
+        --quoteaccent-color: #221E1B;
     }
 
     html:not(.theme-light) .logo-image.white + .logo-image,
