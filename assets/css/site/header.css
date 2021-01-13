@@ -82,10 +82,12 @@
 }
 
 @media (max-width: 991px) {
-    content: " ";
-    padding: 0 1em;
-    font-family: serif;
-    line-height: 1;
+    .menu-item + .menu-item::before {
+        content: " ";
+        padding: 0 1em;
+        font-family: serif;
+        line-height: 1;
+    }
 }
 
 .menu-item[href*="..."],
