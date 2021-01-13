@@ -81,7 +81,11 @@
     line-height: 1;
 }
 
-.mobile-nav .menu-item + .menu-item::before {
+@media (max-width: 991px) {
+    content: " ";
+    padding: 0 1em;
+    font-family: serif;
+    line-height: 1;
 }
 
 .menu-item[href*="..."],
