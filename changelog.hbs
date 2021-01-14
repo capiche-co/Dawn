@@ -1,0 +1,23 @@
+{{!< default}}
+
+<div class="content-area">
+    <main class="site-main">
+        {{#get "posts" limit="1"}}
+            {{#foreach posts visibility="all"}}
+                {{> "content_changelog"}}
+            {{/foreach}}
+        {{/get}}
+    </main>
+</div>
+
+<div class="content-area">
+    <main class="site-main">
+        <div class="post-feed container medium">
+            <h3 class="" style="color: var(--secondary-text-color);font-size: 2em;">Everything new on Capiche.</h3>
+            {{#foreach posts visibility="all"}}
+                {{> "loop"}}
+            {{/foreach}}
+        </div>
+        {{pagination}}
+    </main>
+</div>

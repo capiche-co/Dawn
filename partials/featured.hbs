@@ -1,7 +1,7 @@
-{{#get "posts" filter="featured:true" limit="all" as |featured|}}
+{{#get "posts" filter="featured:true+tags:-[changelog,docs]" limit="all" as |featured|}}
     {{#if featured}}
         <section class="featured-wrapper container">
-            <h2 class="featured-title">Featured articles</h2>
+            <h2 class="featured-title"></h2>
             <div class="featured-feed owl">
                 {{#foreach featured visibility="all"}}
                     <article class="{{post_class}}">
@@ -14,7 +14,11 @@
                                     alt="{{title}}">
                             </div>
                         {{/if}}
-                        <h3 class="post-title">{{title}}</h3>
+                        <div class="single-meta">
+                            {{date published_at format="MMMM DD, YYYY"}}
+                        </div>
+                        <h3 class="">{{title}}</h3>
+                        <p class="single-excerpt" style="margin-top: -0.3em;">{{excerpt}}</p>
                         <a class="u-permalink" href={{url}}
                             aria-label="{{title}}"></a>
                     </article>

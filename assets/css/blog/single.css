@@ -30,7 +30,6 @@
 }
 
 .single-meta {
-    margin-top: -1em;
     color: var(--secondary-text-color);
     font-size: 1.2rem;
     font-weight: 800;
@@ -164,5 +163,9 @@
         max-height: 80%;
         font-size: 90px;
         margin-left: 10%;
+    }
+
+    .single-meta {
+        margin-top: 1em;
     }
 }
