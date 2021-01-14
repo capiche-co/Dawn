@@ -1,13 +1,8 @@
 <div class="cover container">
     <div class="cover-content">
-        {{#if @site.icon}}
-            <div class="cover-icon">
-                <img class="cover-icon-image" src="{{@site.icon}}" alt="{{@site.title}}">
-            </div>
-        {{/if}}
 
         <h2>🎙 The Capiche FM blog.</h2>
-
+        <h3 style="color: var(--secondary-text-color);font-size: 2em;">The companion newspaper for your internet radio station.</h3>
         {{#if @labs.members}}
             {{#unless @member}}
                 <div class="cover-cta">

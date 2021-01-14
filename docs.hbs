@@ -1,0 +1,20 @@
+{{!< docs_head}}
+
+<div class="cover container">
+    <div class="cover-content">
+
+        <h2>🎙 Capiche FM documentation.</h2>
+        <h3 style="color: var(--secondary-text-color);font-size: 2em;">How to get the most out of your internet radio station.</h3>
+    </div>
+</div>
+
+<div class="content-area">
+    <main class="site-main">
+        <div class="post-feed container medium">
+            {{#foreach posts visibility="all"}}
+                {{> "loop"}}
+            {{/foreach}}
+        </div>
+        {{pagination}}
+    </main>
+</div>
