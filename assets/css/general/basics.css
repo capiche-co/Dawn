@@ -1,23 +1,23 @@
 :root {
-    --brand-color: #7A8FCD;
-    --primary-text-color: #4f4b48;
+    --brand-color: #27AAE1;
+    --primary-text-color: #414042;
     --secondary-text-color: #ada49e;
-    --white-color: #FFF9F5;
-    --lighter-gray-color: #EBE5E0;
+    --white-color: #fafafa;
+    --lighter-gray-color: #F2EDE9;
     --light-gray-color: #CDC7C1;
     --mid-gray-color: #ADA69F;
     --dark-gray-color: #7C736D;
     --darker-gray-color: #534B46;
     --black-color: #221E1B;
-    --green-color: #24BCB2;
-    --orange-color: #FA8A71;
-    --red-color: #EA765D;
+    --green-color: #27E1B4;
+    --orange-color: #F15A29;
+    --red-color: #F291C6;
     --facebook-color: #3b5998;
     --twitter-color: #1da1f2;
     --rss-color: #f26522;
     --quotebg-color: #ebf6f7;
-    --quotetxt-color: #26bea7;
-    --quoteaccent-color: #40a8b7;
+    --quotetxt-color: #27AAE1;
+    --quoteaccent-color: #FBC340;
     --animation-base: ease-in-out;
     --font-base: 'NeuePlak-Regular', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif; /* stylelint-disable-line value-keyword-case */
     --font-second: 'ExchangeMP', Georgia, Times, Times New Roman, serif; /* stylelint-disable-line value-keyword-case */

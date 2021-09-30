@@ -1,14 +1,14 @@
 .theme-dark:root {
     --primary-text-color: #f5efeb;
     --secondary-text-color: #7c736d;
-    --white-color: #211e1b;
+    --white-color: #212121;
     --lighter-gray-color: #302B28;
     --light-gray-color: #534B46;
     --mid-gray-color: #ADA69F;
-    --dark-gray-color: #EBE5E0;
+    --dark-gray-color: #F2EDE9;
     --darker-gray-color: #FFF9F5;
     --quotebg-color: #433924;
-    --quotetxt-color: #EFD56C;
+    --quotetxt-color: #FBC340;
     --quoteaccent-color: #221E1B;
 }
 
@@ -48,11 +48,11 @@
         --primary-text-color: #f5efeb;
         --secondary-text-color: #7c736d;
         --white-color: #211e1b;
-        --black-color: #FFF9F5;
+        --black-color: #64381b;
         --lighter-gray-color: #302B28;
         --light-gray-color: #534B46;
         --mid-gray-color: #ADA69F;
-        --dark-gray-color: #EBE5E0;
+        --dark-gray-color: #F2EDE9;
         --darker-gray-color: #FFF9F5;
         --quotebg-color: #433924;
         --quotetxt-color: #EFD56C;

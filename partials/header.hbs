@@ -1,10 +1,10 @@
 <header class="site-header container">
     <div class="header-left">
-        <a class="logo" href="https://capiche.fm/">
+        <a class="logo" href="https://racket.com">
             {{#if @site.logo}}
                 <img class="logo-image" src="{{@site.logo}}" alt="{{@site.title}}">
             {{else}}
-                <span class="logo-text">capiche.fm</span>
+                <span class="logo-text">Racket</span>
                 <span class="logo-beta">BETA</span>
             {{/if}}
         </a>
@@ -12,17 +12,10 @@
     {{#if @site.navigation}}
         <nav class="main-nav hidden-xs hidden-sm hidden-md">
             {{navigation}}
-            {{#if @labs.members}}
-                <button class="button-icon menu-item-button js-modal" data-modal="search" aria-label="Search">
-                    <svg class="icon">
-                        <use xlink:href="#magnify"></use>
-                    </svg>
-                </button>
-            {{/if}}
         </nav>
 
-        <div aria-label="Capiche FM" class="button-capiche hidden-lg hidden-xl">
-            <a class="" href="https://capiche.fm/discover">📻&nbsp;&nbsp;Discover shows</a>
+        <div aria-label="Racket" class="button-capiche hidden-lg hidden-xl">
+            <a class="" href="https://racket.com/">🏸&nbsp;&nbsp;Get your Racket</a>
         </div>
         <button class="button-icon hidden-lg hidden-xl js-modal" data-modal="search" aria-label="Search">
             <svg class="icon">
@@ -38,17 +31,17 @@
             <div class="container">
                 <nav class="mobile-nav">
                     {{navigation}}
-                    <a class="menu-item" aria-label="Sign into Capiche FM" href="https://capiche.fm/signin">Sign in</a>
+                    <a class="menu-item" aria-label="Sign in to Racket" href="https://racket.com/signin">Sign in</a>
                 </nav>
             </div>
         </div>
     {{/if}}
     <div class="header-right hidden-xs hidden-sm hidden-md">
-        <div aria-label="Capiche FM" class="button-capiche">
-            <a class="" href="https://capiche.fm/discover">📻&nbsp;&nbsp;Discover shows</a>
+        <div aria-label="Racket" class="button-capiche">
+            <a class="" href="https://racket.com/">🏸&nbsp;&nbsp;Get your Racket</a>
         </div>
-        <div class="content" aria-label="Sign into Capiche FM" style="padding-left: 1em;padding-right: 1em;">
-            <a class="" href="https://capiche.fm/signin">Sign in</a>
+        <div class="content" aria-label="Sign into Racket" style="padding-left: 1em;padding-right: 1em;">
+            <a class="" href="https://racket.com/signin">Sign in</a>
         </div>
         <button class="button-icon js-modal" data-modal="search" aria-label="Search">
             <svg class="icon">

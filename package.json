@@ -1,7 +1,7 @@
 {
-    "name": "capichefm",
-    "description": "A theme for the Capiche FM blog based on Ghost Dawn",
-    "version": "1.2.0",
+    "name": "racket",
+    "description": "A theme for the Racket blog based on Ghost Dawn",
+    "version": "1.3.0",
     "engines": {
         "ghost": ">=3.0.0",
         "ghost-api": "v3"
@@ -9,7 +9,7 @@
     "license": "MIT",
     "author": {
         "name": "matthewguay",
-        "email": "matthew@capiche.com",
+        "email": "matt@racket.com",
         "url": "https://ghost.org"
     },
     "keywords": [
@@ -65,5 +65,8 @@
     },
     "browserslist": [
         "defaults"
-    ]
+    ],
+    "dependencies": {
+        "ghost": "^4.1.2"
+    }
 }
